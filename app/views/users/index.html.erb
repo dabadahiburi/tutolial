@@ -1,0 +1,8 @@
+<% provade (:title, 'All users')%>
+<h1> All user</h1>
+<%= will_paginate %>
+<ul class="users">
+  <%= @users.each do |user| %>
+    <%= render @user %>
+</ul>
+<%= will_paginate %>
